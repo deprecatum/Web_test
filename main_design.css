@@ -1,4 +1,38 @@
 body{
+	display:block;
 	width:100%;
+	margin:0%;
+	padding:0%;
+	border:0%;
+}
+
+div{
+	display:block;
+	margin:0%;
+	padding:0%;
+	border:0%;
+}
+
+#header{
+	max-width:100%;
 	background-color:#00ff00;
+}
+
+#title_bar{
+	background-color:#00ff00;
+}
+
+#nav_bar{
+	max-width:90%;
+	background-color:#00ff00;
+}
+
+#main{
+	max-width:100%;
+	background-color:#00ff00;
+}
+
+@media only screen and (max-width=600){
+
+
 }
