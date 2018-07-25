@@ -1,8 +1,4 @@
-void open_link(){
-	window.
-}window.alert("working");
-
-window.addEventListener("keyboard",keys);
+window.addEventListener('keydown',keys);
 d = document.getElementById("test");
 context=d.getContext("2d");
 
@@ -15,17 +11,17 @@ delta_time=1000/divider;
 	
 	x=1;
 	y=1;
+	xx=x++;
+	yy=y++;
 	
-setInterval(main(),delta_time);	
+setInterval(main,delta_time);	
 
 function main(){
 	context.fillStyle="white";
 	context.fillRect(0,0,d.width,d.height);
 	
 	context.fillStyle="black";
-	context.fillRect(x,y,x+2,y+2);
-	
-	window.alert("main");
+	context.fillRect(x,y,xx,yy);
 }
 
 
@@ -39,15 +35,14 @@ function main(){
 	
 function keys(evt){
 	switch(evt.keyCode){
-		case 37:{
-			window.alert("left key");
+		case 37:
 			if(x==0){
 				x=499;
 			}else{	
 				x--;
 			}
-			break;
-		}
+		break;
+		
 		case 38:{
 			if(y==0){
 				y=499;
