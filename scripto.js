@@ -11,8 +11,8 @@ delta_time=1000/divider;
 	
 	x=1;
 	y=1;
-	xx=x++;
-	yy=y++;
+	xx=x+2;
+	yy=y+2;
 	
 setInterval(main,delta_time);	
 
